@@ -1,0 +1,35 @@
+
+
+
+  <form [formGroup]="profileForm">
+  
+    <label>
+      First Name:
+      <input type="text" formControlName="firstName">
+    </label>
+  
+    <label>
+      Last Name:
+      <input type="text" formControlName="lastName">
+    </label>
+  <form [formGroup]="profileForm" (ngSubmit)="onSubmit()"></form>
+  <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+  </form>
+  
+  <label for="pet-select">Choose a pet:</label>
+
+<select name="films" id="type-select">
+    
+    <option value="film">film</option>
+    <option value="serie">série</option>
+    <option value="episode">épisode</option>
+   
+</select>
+
+<select name="films" id="type-select">
+    
+    <option value="complete">complète</option>
+    <option value="courte">courte</option>
+ 
+   
+</select>
